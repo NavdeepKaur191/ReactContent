@@ -1,0 +1,66 @@
+{
+    "results": [
+        {
+            "gender": "female",
+            "name": {
+                "title": "Miss",
+                "first": "Rebecca",
+                "last": "Fuller"
+            },
+            "location": {
+                "street": {
+                    "number": 8774,
+                    "name": "Marsh Ln"
+                },
+                "city": "Thousand Oaks",
+                "state": "New Jersey",
+                "country": "United States",
+                "postcode": 52300,
+                "coordinates": {
+                    "latitude": "88.5959",
+                    "longitude": "28.4942"
+                },
+                "timezone": {
+                    "offset": "-10:00",
+                    "description": "Hawaii"
+                }
+            },
+            "email": "rebecca.fuller@example.com",
+            "login": {
+                "uuid": "c411e7e9-7ac1-4b0a-a9b0-4307ac021646",
+                "username": "beautifulfish281",
+                "password": "redfish",
+                "salt": "QVgSdNPK",
+                "md5": "2553c228ca3df13eeb0dc7bc8ee7e61a",
+                "sha1": "25fed97610e7f1a0288e074eee23232312856038",
+                "sha256": "621555c0ccb9abb8c9af1d0dd312798edafb88962b0cbbb6e18d2625807b1154"
+            },
+            "dob": {
+                "date": "1947-09-30T09:17:32.139Z",
+                "age": 75
+            },
+            "registered": {
+                "date": "2011-11-17T23:59:55.086Z",
+                "age": 11
+            },
+            "phone": "(801) 232-4413",
+            "cell": "(577) 645-4084",
+            "id": {
+                "name": "SSN",
+                "value": "431-41-9174"
+            },
+            "picture": {
+                "large": "https://randomuser.me/api/portraits/women/60.jpg",
+                "medium": "https://randomuser.me/api/portraits/med/women/60.jpg",
+                "thumbnail": "https://randomuser.me/api/portraits/thumb/women/60.jpg"
+            },
+            "nat": "US"
+        }
+    ],
+    "info": {
+        "seed": "12281c003d18ffe7",
+        "results": 1,
+        "page": 1,
+        "version": "1.4"
+    }
+}

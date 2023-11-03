@@ -1,0 +1,34 @@
+[
+    {
+        "name": "Castle Conquest",
+        "category": "Strategy",
+        "players": "2-4",
+        "ageGroup": "12+",
+        "price": "$45.99",
+        "stock": 12
+    },
+    {
+        "name": "Galactic Explorers",
+        "category": "Adventure",
+        "players": "3-6",
+        "ageGroup": "10+",
+        "price": "$39.99",
+        "stock": 8
+    },
+    {
+        "name": "Spellbinders United",
+        "category": "Fantasy",
+        "players": "2-4",
+        "ageGroup": "14+",
+        "price": "$59.99",
+        "stock": 15
+    },
+    {
+        "name": "Pirate Plunder",
+        "category": "Family",
+        "players": "3-6",
+        "ageGroup": "8+",
+        "price": "$34.99",
+        "stock": 20
+    }
+]

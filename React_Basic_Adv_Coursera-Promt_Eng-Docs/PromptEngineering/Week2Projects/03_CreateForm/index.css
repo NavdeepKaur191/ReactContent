@@ -1,0 +1,13 @@
+.custom-form {
+    border: 1px solid gray;
+    padding: 10px;
+}
+
+.username-input, .password-input {
+    width: 200px;
+}
+
+.submit-btn {
+    background-color: blue;
+    color: white;
+}

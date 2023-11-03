@@ -1,0 +1,127 @@
+## Optimizing Prompts Review - https://chat.openai.com/
+You can use ChatGPT to help you optimize prompts using three basic steps: 
+
+1. Give ChatGPT an overview of what you'd like to do, 
+prompt to ask clarifying questions
+
+2. Answer ChatGPT's clarifying questions
+
+3. When ChatGPT returns an optimized prompt, 
+feed the prompt back to ChatGPT
+
+## Practice: Use the steps above to optimize the following prompt: 
+
+"Show me a code snippet for a modal in React." 
+
+## My prompt 
+
+"I'm going to give you a prompt and I want you to ask me clarifying questions to help optimize the prompt. Suggest a more effective prompt based on my answers. Here's the prompt: "Show me a code snippet for a modal in React." 
+
+## Clarifying Questions: 
+
+- Do you want a functional component or a class component in React?
+    - functional
+- Should the modal be styled with plain CSS, SCSS, or a specific library like styled-components?
+    - external css stylesheet
+- Do you want the modal to open and close based on a button click?
+    - yes
+- Are there any specific content types you want inside the modal? (e.g., text, images, forms)
+    - just text is fine for now
+- Do you require any animation or transition effects when the modal appears or disappears?
+    - use a simple fade in/out effect
+- Are you using any state management tools (like Redux) or do you prefer local component state for managing the modal's visibility? 
+    - local component state 
+
+## Optimized prompt
+
+"Provide a React functional component code snippet for a modal that utilizes an external CSS stylesheet. The modal should display text content and open/close based on a button click. It should have a simple fade in/out transition effect and manage its visibility using local component state."
+
+
+Modal.jsx
+
+import React, { useState } from 'react';
+import './Modal.css'; // Importing the external stylesheet
+
+function Modal() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleModal = () => {
+    setIsOpen(!isOpen);
+  };
+
+  return (
+    <div>
+      <button onClick={toggleModal}>Toggle Modal</button>
+      
+      {isOpen && (
+        <div className="modalOverlay">
+          <div className="modalContent">
+            <h2>Modal Title</h2>
+            <p>This is the modal content.</p>
+            <button onClick={toggleModal}>Close</button>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
+
+export default Modal;
+
+
+style.css
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+  animation: fadeIn 0.5s; /* fading in effect */
+}
+
+.modalContent {
+  width: 300px;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  animation: slideIn 0.5s; /* slide in effect */
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideIn {
+  from { transform: translateY(-50%); }
+  to { transform: translateY(0); }
+}
+
+index.jsx
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import Modal from './Modal.jsx';
+
+function App() {
+  return (
+    <Modal />
+  )
+}
+
+ReactDOM.createRoot(document.getElementById('root')).render(<App />); 
+
+index.html
+<html>
+    <head>
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <div id="root"></div>
+        <script src="/index.jsx" type="module"></script>
+    </body>
+</html>

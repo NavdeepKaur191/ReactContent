@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+.accordion {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.accordion-item {
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+}
+
+.accordion-title {
+  cursor: pointer;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f5f5f5;
+}
+
+.accordion-icon {
+  transition: transform 0.6s ease;
+}
+
+.accordion-icon.rotate {
+  transform: rotate(180deg);
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.6s ease;
+  background-color: #fff;
+  padding: 0 10px;
+}
+
+.accordion-content.show {
+  max-height: 100px; /* you may need to adjust this based on your content */
+  padding: 10px;
+}

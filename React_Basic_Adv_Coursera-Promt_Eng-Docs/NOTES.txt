@@ -1,0 +1,32 @@
+run to create folder
+npm init react-app app-name
+
+run inside existing folder
+npm init react-app .
+
+
+Gets rid of babel error
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
+  }
+
+
+
+git push -u origin main
+
+
+NOTE:  Use Chrome to download peer reviews.
+
+
+ADDING prettierrc
+add .prettierrc.json file and add {} to the file
+
+*Add format... to package.json
+
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "format": "prettier --write \"src/**/*.{js,jsx}\""
+  },

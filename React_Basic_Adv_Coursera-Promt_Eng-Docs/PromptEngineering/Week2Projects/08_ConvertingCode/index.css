@@ -1,0 +1,40 @@
+ 
+/* Oops, all we have here is some tailwind classes,
+but we're not set up for tailwind!
+Prompt ChatGPT to 
+extract the CSS to an external stylesheet  */
+
+/* Prompt: Please convert this tailwind code into an external CSS stylesheet: */
+
+/* .container styles */
+.container {
+    position: relative;
+    height: 100vh;
+    font-family: 'sans-serif';
+    text-align: center;
+    overflow: hidden;
+}
+
+/* #startButton styles */
+#startButton {
+    font-size: 1rem; /* text-base */
+    padding: 0.625rem 1.25rem; /* px-5 py-2.5 */
+    cursor: pointer;
+}
+
+/* #timer styles */
+#timer {
+    font-size: 2em; /* text-2xl */
+    margin: 1.25rem; /* m-5 */
+}
+
+/* .rocket styles */
+.rocket {
+    font-size: 3em; /* text-3xl */
+    transition: transform 2s; /* transition-transform duration-2000 */
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-100%); /* -translate-x-full */
+}
+

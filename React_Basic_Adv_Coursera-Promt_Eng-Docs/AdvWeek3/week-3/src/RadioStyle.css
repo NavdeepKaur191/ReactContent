@@ -1,0 +1,46 @@
+.RadioGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.RadioOption {
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+input {
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+label {
+  cursor: pointer;
+}
+
+.App {
+    display: flex;
+    flex: 1;
+    height: 100vh;
+    flex-direction: column;
+    padding: 16px;
+    align-items: center; 
+}
+
+  
+  button {
+    margin-top: 16px;
+    min-width: 180px;
+    width: auto;
+    height: 32px;
+    border: none;
+    border-radius: 8px;
+    background-color: darkblue;
+    color: white;
+  }
+  
+  button:disabled,
+  button[disabled] {
+    background-color: #cccccc;
+    color: #666666;
+  }
